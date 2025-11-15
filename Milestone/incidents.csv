@@ -1,0 +1,41 @@
+Alert,Host,Incident,MITRE,OS,Resolution,Severity,SourceIP,User
+Multiple failed SSH logins,SRV-LNX-01,Incident #001,T1110,Ubuntu 20,Blocked source IP; Reset password; Enabled MFA.,High,10.1.1.9,johns
+Suspicious PowerShell encoded command detected,WKS-22,Incident #002,T1059,Windows 11,Terminated process; Disabled PowerShell v2; Quarantined artifacts.,High,,markp
+Rapid file encryption detected (possible ransomware),FIN12,Incident #003,T1486,Windows 10,Isolated host; Triggered incident response plan; Restored from backup.,Critical,,anitaa
+Unusual outbound DNS requests to unknown domain,SRV-DB01,Incident #004,T1568,CentOS 7,Blacklisted domain; Conducted IOC scan.,Medium,,rakesh
+Privilege escalation attempt,WKS-77,Incident #005,T1068,Windows 11,Revoked privileges; Credential rotation; Monitored user actions.,High,,danielk
+Malicious Python script executed,LAB-07,Incident #006,T1059.006,Ubuntu 22,Stopped script; Performed malware analysis; Cleaned environment.,High,,alexa
+,SRV-LNX-12,Incident #007,T1110.001,Ubuntu 22,Blocked IP; Enabled fail2ban; Reset credentials.,High,10.2.4.9,stevet
+Spike in failed login attempts,SRV-APP2,Incident #008,T1110,RedHat 8,Throttled login attempts; Enabled MFA.,Medium,,rohan
+PowerShell IEX download command detected,WKS-81,Incident #009,T1059.001,Windows 10,Killed process; Quarantined file; Blocked domain.,High,,megha
+Cross-site scripting attempt on internal web tool,WEB-03,Incident #010,T1059.007,Debian 11,Patched input validation; Updated WAF rules.,Medium,,allan
+Unusual sudo usage,SRV-LNX-05,Incident #011,T1053,Ubuntu 18,Reviewed sudoers file; Revoked access.,Medium,,samr
+Detected network port scanning,SRV-WIN-02,Incident #012,T1046,Windows Server 2019,Blocked IP; Alerted network team.,High,172.22.9.54,kishor
+Unauthorized DB dump attempt,SRV-DB03,Incident #013,T1005,RedHat 9,Revoked DB access; Rotated DB keys.,High,,peter
+Suspicious remote desktop login,WKS-55,Incident #014,T1021.001,Windows 11,Forced logout; Enabled geolocation restrictions.,High,,maria
+Unknown binary consuming 100% CPU,SRV-LNX-09,Incident #015,T1106,Ubuntu 20,Terminated binary; Conducted memory dump.,Medium,,jay
+Frequent failed sudo attempts,DEV-01,Incident #016,T1110,Debian 10,Implemented lockout; Alert rule created.,Medium,,lisa
+Malicious Java JAR execution,DEV-04,Incident #017,T1059.005,Windows 10,Quarantined binary; Removed persistence keys.,High,,george
+Suspicious SSH key usage,SRV-SSH01,Incident #018,T1552,Ubuntu 22,Revoked SSH keys; Enforced rotation.,High,,will
+Outbound C2 communication detected,WKS-13,Incident #019,T1071,Windows 11,Isolated host; Captured PCAP.,Critical,,anirudh
+Unapproved VPN usage,WKS-14,Incident #020,T1133,Windows 10,Disconnected VPN; Updated whitelist.,Medium,,riya
+Multiple failed RDP logins,WKS-33,Incident #021,T1021,Windows 10,Blocked IPs; Enabled account lockout.,High,,tony
+Suspicious cronjob created,SRV-LNX-21,Incident #022,T1053.003,Ubuntu 18,Removed cronjob; Investigated creator.,Medium,,kevin
+Unauthorized file transfer via SCP,SRV-LNX-18,Incident #023,T1105,Ubuntu 20,Disabled SCP; Investigated user session.,High,,harsha
+Macro-enabled document executed,WKS-90,Incident #024,T1059.005,Windows 11,Removed macro; Tracked email origin.,High,,daniel
+Suspicious PowerShell Empire beacon,WKS-64,Incident #025,T1090,Windows 10,Isolated host; Removed persistence.,Critical,,ethan
+Infection via malicious USB,WKS-11,Incident #026,T1091,Windows 10,Blocked USB; Re-imaged workstation.,High,,varun
+WMI execution detected,SRV-WIN-05,Incident #027,T1047,Windows Server 2022,Disabled WMI; Investigated remote commands.,High,,fahad
+Suspicious Python venv created autoSSH brute-force authentication attemptsmatically,DEV-09,Incident #028,T1059.006,Ubuntu 20,Investigated process tree; Removed env.,Medium,,aditya
+Multiple SMB brute-force attempts,SRV-FS01,Incident #029,T1110,Windows Server 2019,Blocked IP; Enabled SMB throttling.,High,,raj
+SQL injection attempt detected,WEB-20,Incident #030,T1190,Debian 11,Patched inputs; Updated WAF signatures.,High,,yusuf
+Malicious scheduled task created,WKS-72,Incident #031,T1053,Windows 11,Removed task; Investigated parent process.,Medium,,johns
+VPN login from unusual country,WKS-22,Incident #032,T1133,Windows 11,Forced MFA challenge; Blocked session.,Medium,,markp
+Credential dumping via lsass.exe,WKS-98,Incident #033,T1003,Windows 10,Terminated process; Memory analysis performed.,High,,anitaa
+Outbound traffic to known malicious IP,SRV-DB01,Incident #034,T1071,CentOS 7,Blocked traffic; Conducted IOC scan.,High,10.22.3.9,rakesh
+Attempt to disable antivirus,WKS-77,Incident #035,T1562,Windows 11,Re-enabled AV; Locked user account.,High,,danielk
+Reverse shell attempt via bash,LAB-07,Incident #036,T1059.004,Ubuntu 22,Killed shell; Blocked C2 IP.,Critical,,alexa
+SSH login from blacklisted country,SRV-LNX-12,Incident #037,T1078,Ubuntu 22,Blocked IP; Reset password.,High,192.168.55.20,stevet
+Large outbound data transfer,SRV-APP2,Incident #038,T1041,RedHat 8,Isolated server; Investigated data.,Critical,,rohan
+Execution of obfuscated JavaScript,WKS-81,Incident #039,T1059.007,Windows 10,Blocked JS; Investigated file source.,High,,megha
+SQL admin login anomaly,SRV-DB03,Incident #040,T1078,RedHat 9,Reset admin password; Reviewed logs.,Medium,,allan
